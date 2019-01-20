@@ -1,0 +1,496 @@
+<html>
+<head>
+<title> Welcome to WhiteLilly </title>
+<link href="../html/css/bootstrap.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.d
+{
+border:1px solid black;
+height:70%;
+}
+.forwidth
+{
+width:70%;
+height:50%;
+border:2px solid black;
+}
+#welimage{
+top:150px;
+left:395px;
+position:Absolute;
+}
+.container-fluid{
+opacity:0;
+}
+.checkin {
+
+width:50%;
+
+}
+select{
+width:80px;
+height:50px;
+}
+
+</style>
+<script src="../html/js/jquey.js"></script>
+
+<script src="../html/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+ 
+ loadd(); 
+$("#nameid").hide();
+$("#phid").hide();
+});
+function loadd(){
+
+$("#welimage").fadeOut(1000);
+$( ".container-fluid" ).fadeTo( 1000,1);
+
+
+}
+
+
+function submit_function(){
+
+var fname,ph;
+fnamee=document.getElementById("name").innerHTML;
+ph=document.getElementById("ph").innerHTML;
+
+if(fnamee =="")
+{
+$("#nameid").show();
+}
+if(ph =="")
+{
+$("#phid").show();
+}
+
+
+
+}
+</script>
+</head>
+<body>
+
+
+
+<div class="container-fluid"> <!-------First container---->
+<img src="..\images\design.jpg" class="img-fluid" id="welimage">
+<div class="row bg-dark"> <!-----First Row----->
+<div class="col-md-1"></div>
+<div class="col-md-5">
+ <img src="..\images\white1.jpg"  class="img-fluid" width="250px"  >
+
+ </div>
+ 
+ 
+
+ <div class="col-md-5">
+ <nav class="navbar navbar-expand-md  navbar-light "> 
+  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#alisha">
+ <span class="navbar-toggler-icon"></span></button>
+ <div class="collapse navbar-collapse" id="alisha">
+ <ul class="navbar-nav">
+<li class="nav-item"> <a href="../html/aboutuss.html" class="nav-link"> <h5 class="text-light" style="margin-top:15px;" > About Us   |</h5> </a> </li>
+<li class="nav-item"><a href="../html/contactus.html" class="nav-link" > <h5 class="text-light" style="margin-top:15px;"> Contact Us  |</h5></a></li>
+ <li class="nav-item">  <h4 class="text-light" style="margin-top:12px;">
+<!--- Button to Open Modal---> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn " data-toggle="modal" data-target="#pi" style="border:1px solid black;"  > 
+ <h5 > <b> Book My Stay </b> </h5></button> </h4>     </li>
+
+<!--- The Modal-->
+
+<div class="modal fade" id="pi">
+<div class="modal-dialog" >
+<div class="modal-content">
+<div class="modal-header">
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<h1> Make Your Reservation </h1>
+</div>
+</div>
+
+</div>
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<div class="modal-body">
+
+<form name="myform" onsubmit="submit_function()">
+Name :<input type="text" size="20" name="fname"  id="name" style="margin-left:29px;">  <span id="nameid" style="color:red;" style="margin-left:15px;"> Please enter Your Name </span><br><br>
+Mobile No.<input type="number" size="10" name="Phone"  style="margin-left:5px;" id="ph"> <span id="phid" style="color:red;"> Please enter Your Phone no </span>  <br><br>
+<label class="text-success" style="margin-left:70px"> <strong>Check In & Check Out Date </strong> </label><br>
+ <input id="checkin" type="date" width="10px"> 
+<input id="checkout" type="date" style="margin-left:20px">  <br><br>
+Rooms : <select> 
+<option> 1 </option>
+<option> 2 </option>
+<option> 3 </option>
+</select>
+
+<span style="margin-left:20px;"> Room Type : </span>
+<select width="50px">
+<option> Deluxe Room </option>
+<option> White Lilly Club Room </option>
+<option> Presidential Suite </option>
+ <option>Lilly Premiere Room </option>
+ <option>Deluxe Suite </option>
+ <option>Luxury Suite </option>
+
+
+</select>
+
+<br><br>
+
+ Room Space :
+<select> 
+<option> Adults </option>
+<option> 1 </option>
+<option> 2 </option>
+</select>
+
+<select id="chid_select" style="margin-left:20px;"> 
+<option> Child </option>
+<option> 1 </option>
+<option> 2 </option>
+</select>
+<br><br>
+<input type="reset" class="bg-success text-light" style="margin-left:50px ;">
+<button class="bg-success text-light" style="margin-left:50px ;" > Submit
+</form>
+</div>
+</div>
+</div>
+<div class="modal-footer" >
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div> </div></div>
+</div>
+</div>
+
+</div><!----modal end--->
+</ul>
+
+</div>
+</div>
+</div><!-----first row closed-->
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-md navbar-light " style="background-color: black;"> 
+
+<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#alishaa"> <!-------Menu Responsive Design---->
+ <span class="navbar-toggler-icon"></span></button>
+ <div class="collapse navbar-collapse" id="alishaa">
+
+<ul class="navbar-nav  "> 
+<li class="nav-item"> <a href="../html/design3.html" class="nav-link"> <h5 class="text-light" style="margin-left:70px; "> Home      </h5> </a> </li>
+<li class="nav-item"> <a href="../html/rooms.html" class="nav-link" id="ro"> <h5 class="text-light "> Rooms    </h5></a></li>
+<li class="nav-item"> <a href="../html/restaurant.html" class="nav-link"> <h5 class="text-light "> Restaurant    </h5> </a></li>
+<li class="nav-item"> <a href="../html/weeding.html" class="nav-link"> <h5 class="text-light "> Weedings </h5></a></li>
+<li class="nav-item"> <a href="../html/hall.html" class="nav-link"> <h5 class="text-light"> Banquet Halls </h5></a></li>
+<li class="nav-item"> <a href="../html/facility.html" class="nav-link"> <h5 class="text-light "> Facilities </h5></a></li>
+<li class="nav-item"> <a href="../html/gallery.html" class="nav-link"> <h5 class="text-light "> Gallery </h5></a></li>
+<li class="nav-item"> <a href="../html/aboutuss.html" class="nav-link"> <h5 class="text-light "> Exclusive Offer </h5></a></li>
+
+</ul>
+</div>
+</nav>
+
+<!------Second Row End----->
+
+<div class="row"><!----Third Row start--->
+<div class="col-md-12 col-sm-12">
+<div id="ali" class="carousel slide" data-ride="carousel" data-interval="1500">
+<ul class="carousel-indicators">
+
+</ul>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="../images/hotel2.jpg" class="img-fluid d" width="100%" >
+</div>
+<div class="carousel-item">
+<img src="../images/hotel1.jpg" class="img-fluid d" width="100%" >
+</div>
+<div class="carousel-item">
+<img src="../images/hotel3.gif" class="img-fluid d" width="100%" >
+</div>
+<div class="carousel-item">
+<img src="../images/bar.jpg" class="img-fluid d" width="100%" >
+</div>
+</div>
+</div>
+</div>
+</div><!----Third row end--->
+
+<div class="row"><!------fourth row start---->
+<div class="col-md-12 col-sm-12">
+<h3 class="text-center"><br>
+ White Lilly Hotel- 5 Star Hotel Near Hyderabad Airport<br>
+ 70-C, Outer Ring  Road, Near Hyderabad  Airport, Vile Parle ,Hyderabad - 500019</h3>
+ </div>
+ </div><!----fourth row end-->
+ <div class="row"><!------fifth row start---->
+<div class="col-md-3 col-sm-12"></div>
+<div class="col-md-3 col-sm-12">
+ <img src="..\images\phone1.jpg" class="img-fluid " style="margin-top:15px;"> <strong> 9812346575  </strong></div>
+ <div class="col-md-3 col-sm-12">
+ <img src="..\images\mail.gif"   class="img-fluid "  > <strong> res@whitelillyhotel.com </strong>
+</div>
+<div class="col-md-3 col-sm-12"></div>
+</div><!------fifth row end--------->
+
+<div class="row bg-dark"><!---availability of room-->
+<div class="col-md-12 col-sm-12">
+<h3 class="text-light" style="margin-left:30px;"><i> Avaliability of Room </i></h3>  
+<form>
+
+ <span style="margin-left:320px; font-size:30px" class="text-light"> <b> Rooms : </span><select> 
+<option> 1 </option>
+<option> 2 </option>
+<option> 3 </option>
+</select>
+
+<span style="margin-left:20px; font-size:30px" class="text-light"> Room Type : </b></span>
+<select width="50px">
+<option> Deluxe Room </option>
+<option> White Lilly Club Room </option>
+<option> Presidential Suite </option>
+ <option>Lilly Premiere Room </option>
+ <option>Deluxe Suite </option>
+ <option>Luxury Suite </option>
+
+
+</select>
+
+<input type="Submit" style="margin-left:50px;" class="bg-success text-light" value="Check Now "> 
+
+
+</form>
+</div>
+
+</div>
+<div class="row"><!---sixth row start--->
+<div class="col-md-1"></div>
+<div class="col-md-11 col-sm-12 col-12">
+<img src="..\images\info1.gif" class="img-fluid " style="margin-top:15px;">
+<img src="..\images\info2.gif" class="img-fluid " style="margin-top:15px;">
+
+</div>
+</div><!----sixth row end-->
+<br>
+<div class="row"><!----seventh row start--->
+<div class="col-md-12 col-sm-12">
+<p class="text-center">
+You've just landed in Hyderabad and looking for hotels near Hyderabad airport. Just round the corner from the arrival arena of the hyderabad airport is <U>
+White Lilly </u> in outer Ring Road - One of the most renowned 5-star hotels in hyderabad near the airport. We offer complimentary airport transfers to our 
+guests arriving to and departing from Terminal 1B.The Orchid is an oasis of a green eco-friendly haven right in the heart of bustling hyderabad.The first thing to 
+greet you is the majestic 70-foot indoor waterfall.It delights you even as it transports you to all things wonderful and beautiful making it one of the most 
+ visited hotels in hyderabad near Airport.
+</p>
+</div>
+</div><!---seventh row end--->
+
+<h4 class="text-center text-dark"><b> Stay at Our Hotel Near Hyderabad Airport </b></h4>
+
+<div class="row"><!---eight row start--->
+<div class="col-md-1"></div>
+<div class="col-md-11 col-sm-12">
+<img src="..\images\info9.gif" class="img-fluid " style="margin-top:15px;" >
+<img src="..\images\info5.gif" class="img-fluid" style="margin-top:15px;">
+</div>
+</div><!----eight row end-->
+<br>
+<div class="row"><!----ninth row start--->
+<div class="col-md-12 col-sm-12">
+<p class="text-center">
+More and more people today are concerned about the environment and making spaces eco-friendly. We, at our <u>white Lilly</u> Hotel Hyderabad , too are trying to 
+do our bit. The hotel has been designed, built and is maintained keeping environmental issues in mind. So it is with joy that we invite you, our guests to 
+celebrate not just your stay with us, but also to join in, in bringing a much-needed eco-awareness in our way of life. Our initiative towards a safer 
+environment is seldom seen amongst hotels in hyderabad.
+</p>
+</div>
+</div><!---ninth row end--->
+
+<div class="row"><!----tenth row start--->
+<div class="col-md-4 col-sm-12"> 
+
+<div class="card d">
+<div class="card-header bg-success">
+<h4 class="text-center text-light"> Help Desk </h4>
+<img src="..\images\ringbell.jpg" class="img-fluid forwidth" style="margin-left:40px;" >
+
+
+</div>
+<div class="card-body">
+<p class="text-justify">
+We know how busy our guests can be, so we do everything we can to make their stay worry-free. Count on our Travel desk to assist you with your travel 
+arrangements - be it making or changing onward reservations, organizing a car or an outing.
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="col-md-4 col-sm-12 col-12"> 
+<div class="card d">
+<div class="card-header bg-success">
+<h4 class="text-center text-light"> Airport Facility </h4>
+<img src="..\images\airportt.jpg" class="img-fluid forwidth" style="margin-left:40px;" >
+
+
+</div>
+<div class="card-body">
+<p class="text-justify">
+ 
+The <u> White Lilly Hotel </u>,Hyderabad is located right next to the Hyderabad airport. We only offer Free Pickup and Drop to  Airport . 
+Please call us at +91-22-2616 4040 with your flight schedule and we'll be there to greet you and pick you up at the airport.
+
+
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-12"> 
+<div class="card d">
+<div class="card-header bg-success">
+<h4 class="text-center text-light"> Medical Facility </h4>
+<img src="..\images\ambulance.gif" class="img-fluid forwidth" style="margin-left:40px;" >
+
+</div>
+<div class="card-body">
+<p class="text-justify">
+ Our Hotel is connected to Hyderabad's Best Hospital i.e; Cure Heath Hospital . The ambulance
+facility is there And Two well Qualified Doctors Dr. Renu Sharma And Dr. Ravi Sethi is Avaliable 9AM-9PM and Dr. Vena Sharma is Avaliable 9 Pm to 6 am in hotel
+</p>
+</div>
+</div>
+</div>
+
+</div><!----tenth row end----->
+<br>
+<div class="row"><!----Row start---->
+<div class="col-md-1"></div>
+<div class="col-md-11 col-sm-12">
+<h3 class="text-center"> Hotel Amenities </h3><br>
+<div class="row">
+<div class="col-md-4 col-sm-12">
+<h4>
+<ul>
+  <li>Hotel near Hyderabad Airport </li><br>
+ <li>5 Star Hotel In Hyderabad </li><br>
+<li> Free Parking </li> <br>
+<li> Pick-up and Drop facility </li><br>
+<li>Complimentary Wi-Fi</li><br>
+</ul>
+</h4>
+
+</div>
+
+<div class="col-md-4 col-sm-12">
+<h4>
+<ul>
+<li> Swimmimg Pool </li><br>
+<li> Complimentary breakfast </li><br>
+<li> Restaurant</li><br>
+<li> Banquet Hall </li><br>
+<li>24 hour  Room Service</li> </h4><br>
+</ul>
+
+</div>
+
+<div class="col-md-4 col-sm-12">
+<h4>
+<ul>
+<li> Bar </li><br>
+<li> Coffee Shop </li><br>
+<li> Fitness centre </li><br>
+<li> Business Center  </li><br>
+<li> Laundry service</li><br>
+</ul>
+</h4>
+</div>
+</div>
+</div>
+
+</div><!---row end-->
+<div class="row"><!---Row Start--->
+<div class="col-md-2 col-sm-12"></div>
+<div class="col-md-8 col-sm-12">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d121829.24858111003!2d78.3526430667517!3d17.40391463145603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d17.387587!2d78.4922425!4m5!1s0x3bcb93c0f34ab693%3A0x84f906f2a716e6c3!2sradisson!3m2!1d17.4473675!2d78.36310019999999!5e0!3m2!1sen!2sin!4v1537007867806" 
+width="100%" height="50%" frameborder="1" style="border:0" allowfullscreen></iframe><br>
+<h4 class="text-center">White Lilly Hotel- 5 Star Hotel Near Hyderabad Airport<br>
+70-C, Outer Ring Road, Near Hyderabad Airport, Vile Parle ,Hyderabad - 500019 </h4>
+<hr color="black" width="100%">
+<h4 class="text-center"> Get In Touch With Us </h4><br>
+</div>
+<div class="col-md-2 col-sm-12"></div>
+</div>
+<div class="row">
+<div class="col-md-5 col-sm-12"></div>
+<div class="col-md-4 col-sm-12">
+ <a href="../html/new2.html"> <img src="..\images\insta.gif"     class="img-fluid" style="margin-left:10px;">  </a>
+ <a href="../html/new2.html"> <img src="..\images\twitter.gif"   class="img-fluid" style="margin-left:5px;"> </a>
+ <a href="../html/new2.html"> <img src="..\images\facebook.gif"  class="img-fluid" style="margin-left:5px;"> </a>
+ <a href="../html/new2.html"> <img src="..\images\youtube.gif"   class="img-fluid" style="margin-left:5px;"> </a>
+</div>
+<div class="col-md-3 col-sm-12"></div>
+</div>
+<div class="row">
+<div class="col-md-1"> </div>
+<div class="col-md-3 col-sm-12">
+ <br><img src="..\images\white1.jpg" class="img-fluid" > <br>
+<h5>For more than five decades, White Lilly hotel has created countless memories for their customers highlighting the real meaning of hospitality.</h5></div>
+<div class="col-md-4 col-sm-12"><br>
+<H3 class="text-center text-success"> Quick links </h3>
+<ul> 
+<li style="margin-left:69px;"> <a href="../html/index.html" > <h5 > Home      </h5> </a> </li>
+<li style="margin-left:69px;"> <a href="../html/rooms.html" > <h5 > Rooms    </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/restaurant.html"> <h5 > Restaurant    </h5> </a></li>
+<li style="margin-left:69px;"> <a href="../html/weeding.html" > <h5 > Weedings </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/hall.html" > <h5 > Banquet Halls </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/facility.html" > <h5 > Facilities </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/gallery.html" > <h5 > Gallery </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/offerzone.html" > <h5 > Exclusive Offer </h5></a></li>
+
+</ul>
+
+
+</div>
+
+<div class="col-md-3 col-sm-12"><br>
+<h3 class="text-center text-success"> Contact Us </h3>
+<img src="..\images\phone1.jpg" class="img-fluid " style="margin-left:55px;"> <strong> 9812346575 , 9823561965 </strong><br><br>
+<img src="..\images\mail.gif" class="img-fluid " style="margin-left:55px; height:5%;"> <strong style="margin-left:15px;"> res@whitelillyhotel.com </strong>
+<br><br>
+<h3 class="text-center text-success"> Get The Mobile App </h3>
+<img src="..\images\app1.jpg" class="img-fluid" style="margin-left:55px;"> <br><br>
+<img src="..\images\apple1.jpg" class="img-fluid" style="margin-left:55px;"> <br><br>
+</div>
+<br>
+
+
+<div class="col-md-1"></div>
+</div>
+<div class="row" style="background-color:black;">
+<div class="col-md-12 col-sm-12">
+<hr>
+<b> <h6 class="text-light">© 2014 All Rights Reserved </h6> </b>
+
+</div>
+</div>
+</div><!----first container closed-->
+</body>
+</html>

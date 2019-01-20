@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../html/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<script src="../html/js/jquey.js"></script>
+<script src="../html/js/popper.js"></script>
+<script src="../html/js/bootstrap.js"></script>
+<script src="../html/jquery-mousewheel-3.1.13/jquery.mousewheel.js"></script>
+<style>
+#myDIV {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<div id="myDIV">This example uses the addEventListener() method to attach a "wheel" event to a DIV element. Roll the mouse wheel over me - either up or down!</div>
+<p>A function is triggered when you roll the mouse wheel over div. The function sets the font-size of div to 35 pixels.</p>
+
+<p><strong>Note:</strong> The wheel event is not supported in Safari and IE8 (and earlier).</p>
+<script>
+$('#myDIV').bind('mousewheel', function(e) {
+    if(e.originalEvent.wheelDelta / 120 > 0) {
+        alert('up');
+    } else {
+        alert('down');
+    }
+});
+</script>
+</body>
+</html>

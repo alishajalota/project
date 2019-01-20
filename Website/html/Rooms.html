@@ -1,0 +1,475 @@
+<html>
+<head>
+<title> Welcome to WhiteLilly </title>
+<link href="../html/css/bootstrap.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.d
+{
+border:1px solid black;
+height:70%;
+}
+.forwidth
+{
+width:90%;
+height:50%;
+border:2px solid black;
+}
+
+</style>
+<script src="../html/js/jquey.js"></script>
+<script src="../html/js/popper.js"></script>
+<script src="../html/js/bootstrap.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+$("a").hover(function() {
+
+    $(this).css('color', 'red');
+	
+});
+
+});
+</script>
+</head>
+<body>
+<div class="container-fluid"> <!-------First container---->
+
+<div class="row bg-dark"> <!-----First Row----->
+<div class="col-md-1"></div>
+<div class="col-md-5">
+ <img src="..\images\white1.jpg"  class="img-fluid" width="250px"  >
+
+ </div>
+ 
+ 
+
+ <div class="col-md-5">
+ <nav class="navbar navbar-expand-md  navbar-light "> 
+  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#alisha">
+ <span class="navbar-toggler-icon"></span></button>
+ <div class="collapse navbar-collapse" id="alisha">
+ <ul class="navbar-nav">
+<li class="nav-item"> <a href="../html/aboutuss.html" class="nav-link"> <h5 class="text-light" style="margin-top:15px;" > About Us   |</h5> </a> </li>
+<li class="nav-item"><a href="../html/contactus.html" class="nav-link" > <h5 class="text-light" style="margin-top:15px;"> Contact Us  |</h5></a></li>
+ <li class="nav-item">  <h4 class="text-light" style="margin-top:12px;">
+<!--- Button to Open Modal---> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn " data-toggle="modal" data-target="#pi" style="border:1px solid black;"  > 
+ <h5 > <b> Book My Stay </b> </h5></button> </h4>     </li>
+
+<!--- The Modal-->
+
+<div class="modal fade" id="pi">
+<div class="modal-dialog" >
+<div class="modal-content">
+<div class="modal-header">
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<img src="..\images\white1.jpg"  class="img-fluid">
+</div>
+</div>
+
+</div>
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<div class="modal-body">
+
+<form>
+<input type="text" size="25" name="fname" placeholder="Name">  <br><br>
+<input type="text" size="25" name="Phone" placeholder="Mobile No">   <br><br>
+
+</div>
+
+<button class="btn btn-success"> Book Now</button>
+</form>
+</div>
+</div>
+<div class="modal-footer" >
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div> </div></div>
+</div>
+</div>
+
+</div><!----modal end--->
+</ul>
+
+</div>
+</div>
+</div><!-----first row closed-->
+
+
+
+
+
+
+<div class="row "  ><!---- Second Row----->
+<div class="col-md-1 bg-dark"></div>
+
+<div class="col-md-10 col-sm-12" style="background-color: black;">
+<nav class="navbar navbar-expand-md navbar-light " style="background-color: black;"> 
+
+<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#alishaa"> <!-------Menu Responsive Design---->
+ <span class="navbar-toggler-icon"></span></button>
+ <div class="collapse navbar-collapse" id="alishaa">
+
+<ul class="navbar-nav  "> 
+<li class="nav-item"> <a href="../html/index.html" class="nav-link anchor1"> <h5 class="text-light" style="margin-left:70px; "> Home      </h5> </a> </li>
+<li class="nav-item"> <a href="../html/rooms.html" class="nav-link anchor1"> <h5 class="text-light "> Rooms    </h5></a></li>
+<li class="nav-item"> <a href="../html/restaurant.html" class="nav-link anchor1"> <h5 class="text-light "> Restaurant    </h5> </a></li>
+<li class="nav-item"> <a href="../html/weeding.html" class="nav-link anchor1"> <h5 class="text-light "> Weedings </h5></a></li>
+<li class="nav-item"> <a href="../html/hall.html" class="nav-link anchor1"> <h5 class="text-light"> Banquet Halls </h5></a></li>
+<li class="nav-item"> <a href="../html/facility.html" class="nav-link anchor1"> <h5 class="text-light "> Facilities </h5></a></li>
+<li class="nav-item"> <a href="../html/gallery.html" class="nav-link anchor1"> <h5 class="text-light "> Gallery </h5></a></li>
+<li class="nav-item"> <a href="../html/offerzone.html" class="nav-link anchor1"> <h5 class="text-light "> Exclusive Offer </h5></a></li>
+
+</ul>
+</div>
+</nav>
+</div>
+<div class="col-md-1 bg-dark"></div>
+
+</div><!------Second Row End----->
+
+<div class="row"><!----Third Row start--->
+
+<div class="col-md-12 col-sm-12">
+<div id="ali" class="carousel slide" data-ride="carousel" data-interval="1500">
+<ul class="carousel-indicators">
+<li data-target="#ali" data-slide-to="0"></li>
+<li data-target="#ali" data-slide-to="1"></li>
+<li data-target="#ali" data-slide-to="2"></li>
+<li data-target="#ali" data-slide-to="3"></li>
+
+
+
+
+</ul>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="../images/room1.gif" class="img-fluid d" width="100%"  >
+</div>
+
+<div class="carousel-item">
+<img src="../images/room2.jpg" class="img-fluid d" width="100%" >
+</div>
+
+
+<div class="carousel-item">
+<img src="../images/room3.jpg" class="img-fluid d" width="100%" >
+</div>
+
+
+<div class="carousel-item">
+<img src="../images/room4.gif" class="img-fluid d" width="100%" >
+</div>
+</div>
+
+</div>
+
+</div>
+</div><!----Third row end--->
+<br>
+<div class="row"><!---fourth Row--->
+<div class="col-md-4"></div>
+<div class="col-md-5 col-sm-12">
+<img src="../images/suites.gif" class="img-fluid" >
+</div>
+<div class="col-md-3"></div>
+</div><!----forth row closed---->
+<div class="row"><!---fifth row start--->
+
+<div class="col-md-12 col-sm-12">
+<b><p class="text-justify" style="margin-top:1px">
+WhiteLilly achieves a fine blend of modern amenities with traditional aesthetics. Indulge your senses in the exquisitely appointed grand rooms and suites of 
+this luxury hotel in Hyderabad’s near Airport.</p></b>
+</div>
+</div><!---fifth row end-->
+<div class="row"><!---sixth row start--->
+<div class="col-md-4 col-sm-12">
+<div class="card">
+<div class="card-header">
+<img src="..\images\DeluxeKing.jpg" class="img-fluid forwidth" style="margin-left:20px;" >
+<h4 class="text-center text-dark">Deluxe Room </h4>
+</div>
+
+<div class="card-body">
+These beautifully appointed suites have a balcony for those breathtaking views.
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<table  class="table">
+<tr >
+<td > BEDS </td>
+<td ALIGN="right" > 1 king-size bed </TD>
+</TR>
+<tr >
+<td> VIEW </td>
+<td ALIGN="right"> Pool view </TD>
+</TR>
+<tr >
+<td> SIZE </td>
+<td ALIGN="right"> 360 sq ft (33 sq m) </TD>
+</TR>
+<tr >
+<td> HIGHLIGHT </td>
+<td ALIGN="right">  All modern facilities for the business traveller. </TD>
+</TR>
+</TABLE>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div class="col-md-4 col-sm-12">
+<div class="card ">
+<div class="card-header">
+<img src="..\images\club.jpg" class="img-fluid forwidth" style="margin-left:20px;" >
+<h4 class="text-center text-dark">White Lilly Club  Rooms </h4>
+</div>
+
+<div class="card-body">
+With a host of services and amenities, Taj Club is home away from home..
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<table  class="table">
+<tr >
+<td > BEDS </td>
+<td ALIGN="right" > 1 king-size bed </TD>
+</TR>
+<tr >
+<td> VIEW </td>
+<td ALIGN="right"> Pool view </TD>
+</TR>
+<tr >
+<td> SIZE </td>
+<td ALIGN="right"> 400 sq ft (37 sq m) </TD>
+</TR>
+<tr >
+<td> HIGHLIGHT </td>
+<td ALIGN="right">  Access to lilly Club, Lounge & other services. </TD>
+</TR>
+</TABLE>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div class="col-md-4 col-sm-12">
+<div class="card ">
+<div class="card-header">
+<img src="..\images\presidential.jpg" class="img-fluid forwidth" style="margin-left:20px;" >
+<h4 class="text-center text-dark">Presidential Suite</h4>
+</div>
+
+<div class="card-body">
+The grandest of all the rooms specially designed for special guests. 
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<table  class="table">
+<tr >
+<td > BEDS </td>
+<td ALIGN="right" > 1 king-size bed </TD>
+</TR>
+<tr >
+<td> VIEW </td>
+<td ALIGN="right"> Panoramic city views </TD>
+</TR>
+<tr >
+<td> SIZE </td>
+<td ALIGN="right"> 1,421 sq ft (132 sq m) </TD>
+</TR>
+<tr >
+<td> HIGHLIGHT </td>
+<td ALIGN="right">  One-of-a-kind suite with a private balcony & pool </TD>
+</TR>
+</TABLE>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div><!----sixth row end--->
+<br>
+<div class="row"><!----seventh row start--->
+<div class="col-md-4 col-sm-12">
+<div class="card ">
+<div class="card-header">
+<img src="..\images\pre.jpg" class="img-fluid forwidth" style="margin-left:20px;" >
+<h4 class="text-center text-dark">Lilly Premiere Room</h4>
+</div>
+
+<div class="card-body">Specially designed for Business people to choose lilly Premier Room which is large.
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<table  class="table">
+<tr >
+<td > BEDS </td>
+<td ALIGN="right" > 1 king-size bed </TD>
+</TR>
+<tr >
+<td> VIEW </td>
+<td ALIGN="right"> City view </TD>
+</TR>
+<tr >
+<td> SIZE </td>
+<td ALIGN="right"> 712 sq ft (66 sq m) </TD>
+</TR>
+<tr >
+<td> HIGHLIGHT </td>
+<td ALIGN="right">  Walk-out balconies with stunning views </TD>
+</TR>
+</TABLE>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12">
+<div class="card ">
+<div class="card-header">
+<img src="..\images\del.jpg" class="img-fluid forwidth" style="margin-left:20px;" >
+<h4 class="text-center text-dark">Deluxe Suite</h4>
+</div>
+
+<div class="card-body">These well-furnished rooms are your very own sanctuary in the city.
+<div class="col-md-12 col-sm-12">
+<table  class="table">
+<tr >
+<td > BEDS </td>
+<td ALIGN="right" > 1 king-size bed </TD>
+</TR>
+<tr >
+<td> VIEW </td>
+<td ALIGN="right"> Pool view </TD>
+</TR>
+<tr >
+<td> SIZE </td>
+<td ALIGN="right"> 500sq ft (46 sq m) </TD>
+</TR>
+<tr >
+<td> HIGHLIGHT </td>
+<td ALIGN="right">  Very Comfortable Room For Long stay people</TD>
+</TR>
+</TABLE>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12">
+<div class="card ">
+<div class="card-header">
+<img src="..\images\lux.jpg" class="img-fluid forwidth" style="margin-left:20px;" >
+<h4 class="text-center text-dark">Luxury Suite</h4>
+</div>
+
+<div class="card-body">With exquisite fittings and furnishing, these suites surround you in comfort and luxury.
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<table  class="table">
+<tr >
+<td > BEDS </td>
+<td ALIGN="right" > 1 king-size bed </TD>
+</TR>
+<tr >
+<td> VIEW </td>
+<td ALIGN="right"> City view </TD>
+</TR>
+<tr >
+<td> SIZE </td>
+<td ALIGN="right"> 990-1,057 sq ft (92-98 sq m) </TD>
+</TR>
+<tr >
+<td> HIGHLIGHT </td>
+<td ALIGN="right">  Relaxing five-fixture bathrooms with marble Jacuzzis</TD>
+</TR>
+</TABLE>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+<br>
+<div class="row"><!---Row Start--->
+<div class="col-md-2 col-sm-12"></div>
+<div class="col-md-8 col-sm-12">
+
+
+<h4 class="text-center">White Lilly Hotel- 5 Star Hotel Near Hyderabad Airport<br>
+70-C, Outer Ring Road, Near Hyderabad Airport, Vile Parle ,Hyderabad - 500019 </h4>
+<hr color="black" width="100%">
+<h4 class="text-center"> Get In Touch With Us </h4><br>
+</div>
+<div class="col-md-2 col-sm-12"></div>
+</div><!---row end--->
+<div class="row">
+<div class="col-md-5 col-sm-12"></div>
+<div class="col-md-4 col-sm-12">
+ <a href="../html/new2.html"> <img src="..\images\insta.gif"     class="img-fluid" style="margin-left:10px;">  </a>
+ <a href="../html/new2.html"> <img src="..\images\twitter.gif"   class="img-fluid" style="margin-left:5px;"> </a>
+ <a href="../html/new2.html"> <img src="..\images\facebook.gif"  class="img-fluid" style="margin-left:5px;"> </a>
+ <a href="../html/new2.html"> <img src="..\images\youtube.gif"   class="img-fluid" style="margin-left:5px;"> </a>
+</div>
+<div class="col-md-3 col-sm-12"></div>
+</div>
+
+
+<div class="row">
+<div class="col-md-1"> </div>
+<div class="col-md-3 col-sm-12">
+ <br><img src="..\images\white1.jpg" class="img-fluid" > <br>
+<h5>For more than five decades, White Lilly hotel has created countless memories for their customers highlighting the real meaning of hospitality.</h5></div>
+<div class="col-md-4 col-sm-12"><br>
+<H3 class="text-center"> Quick links </h3>
+<ul> 
+<li style="margin-left:69px;"> <a href="../html/index.html" > <h5 > Home      </h5> </a> </li>
+<li style="margin-left:69px;"> <a href="../html/rooms.html" > <h5 > Rooms    </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/Restaurant.html"> <h5 > Restaurant    </h5> </a></li>
+<li style="margin-left:69px;"> <a href="../html/weeding.html" > <h5 > Weedings </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/hall.html" > <h5 > Banquet Halls </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/facility.html" > <h5 > Facilities </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/gallery.html" > <h5 > Gallery </h5></a></li>
+<li style="margin-left:69px;"> <a href="../html/offerzone.html" > <h5 > Exclusive Offer </h5></a></li>
+
+</ul>
+
+
+</div>
+
+<div class="col-md-3 col-sm-12"><br>
+<b><h3 class="text-center "> Contact Us </h3></b>
+<img src="..\images\phone1.jpg" class="img-fluid " style="margin-left:55px;"> <strong> 9812346575 , 9823561965 </strong><br><br>
+<img src="..\images\mail.gif" class="img-fluid " style="margin-left:55px; height:5%;"> <strong style="margin-left:15px;"> res@whitelillyhotel.com </strong></div>
+
+
+<div class="col-md-1"></div>
+</div>
+<div class="row" style="background-color:black;">
+<div class="col-md-12 col-sm-12">
+<hr>
+<b> <h6 class="text-light">© 2014 All Rights Reserved </h6> </b>
+
+</div>
+</div>
+
+</div><!---conatiner closed---->
+</body>
+</html>

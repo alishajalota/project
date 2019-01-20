@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title> tic toc tac </title> 
+        <style>
+           .cross
+            {
+              
+                text-align: center;
+                font-weight: bold; 
+                font-size: 50px; 
+                height:100px;
+                width:200px;
+            }
+           td{
+             border-right: solid black;
+             border-bottom: solid black; 
+             margin-left: 200px;
+           }
+        #box1
+
+        {
+            width:200px;
+            height:200px;
+            border:1px solid black;
+        }
+        hr { 
+    display: block;
+   margin-left: 210px;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 2px;
+}
+        </style>
+    </head>
+    <body onload="StartMyGame()">
+        <script>
+
+            document.value="X";
+           // document.getElementsByTagName("td").addEventListener("onclick", move);
+            function StartMyGame()
+            {
+                          console.log("Game Start");
+            }
+            function move(cross)
+            {
+                 if(cross.innerHTML == "")
+                {
+                    cross.innerHTML= document.value;
+                    CheckWinner();
+                    ChangeMove();
+
+                }
+                else
+                { console.log("Sorry ALready Used box !") }
+
+
+            }
+            //Change the value from X TO 0 and vice-versa
+            function ChangeMove()
+            {
+                
+                if( document.value == "X")
+                {
+                   // alert("hi");
+                   document.value="0";
+                }
+                else
+                {
+                    document.value="X";
+                   // alert("hiiiii");
+                }
+               // console.log("Now "+ document.value + " Your Turn");
+            }
+            function CheckWinner()
+            {
+             //  var p=n;
+             //  alert(p);
+               var q = document.getElementById("t1").innerHTML;
+               var q2 = document.getElementById("t2").innerHTML;
+               var q3 = document.getElementById("t3").innerHTML;
+               var q4 = document.getElementById("t4").innerHTML;
+               var q5 = document.getElementById("t5").innerHTML;
+               var q6 = document.getElementById("t6").innerHTML;
+               var q7 = document.getElementById("t7").innerHTML;
+               var q8 = document.getElementById("t8").innerHTML;
+               var q9 = document.getElementById("t9").innerHTML;
+               if(q!= "")
+               {
+
+               if(q == q2 && q2 == q3 )
+               {
+                       document.getElementById("t1").style.backgroundColor ="red";
+                       document.getElementById("t2").style.backgroundColor ="red";
+                       document.getElementById("t3").style.backgroundColor ="red";
+               document.getElementById("demo").innerHTML = "Winner " +document.value;
+               
+            //  removeonclick();
+                
+               setTimeout(displaywinner, 1000);
+                 
+               }  
+               else if(q==q4 && q4==q7)
+               {
+                   
+                    document.getElementById("t1").style.backgroundColor ="red";
+                       document.getElementById("t4").style.backgroundColor="red";
+                       document.getElementById("t7").style.backgroundColor="red";
+               document.getElementById("demo").innerHTML = "Winner " +document.value;
+
+               setTimeout(displaywinner, 1000);
+                  
+               } 
+            
+            else if( q == q5  && q5 == q9)
+            {
+                       document.getElementById("t1").style.backgroundColor ="red";
+                       document.getElementById("t5").style.backgroundColor="red";
+                       document.getElementById("t9").style.backgroundColor="red";
+                       document.getElementById("demo").innerHTML = "Winner " +document.value;
+                       setTimeout(displaywinner, 300);   
+            }
+            }
+            if(q4!="")
+            {
+                if(q4 == q5 && q5== q6)
+                {
+                    document.getElementById("t4").style.backgroundColor ="red";
+                       document.getElementById("t5").style.backgroundColor="red";
+                       document.getElementById("t6").style.backgroundColor="red";
+                       document.getElementById("demo").innerHTML = "Winner " +document.value;
+                       setTimeout(displaywinner, 300);  
+                }
+            }
+            if(q7!="")
+            {
+                if(q7 == q8 && q8== q9)
+                {
+                    document.getElementById("t7").style.backgroundColor ="red";
+                       document.getElementById("t8").style.backgroundColor="red";
+                       document.getElementById("t9").style.backgroundColor="red";
+                       document.getElementById("demo").innerHTML = "Winner " +document.value;
+                       setTimeout(displaywinner, 300);  
+                }
+                else if(q7==q5 && q5==q3)
+                {
+                    document.getElementById("t7").style.backgroundColor ="red";
+                       document.getElementById("t5").style.backgroundColor="red";
+                       document.getElementById("t3").style.backgroundColor="red";
+                       document.getElementById("demo").innerHTML = "Winner " +document.value;
+                       setTimeout(displaywinner, 300);  
+                }
+            }
+            if(q2!="")
+            {
+                if(q2 == q5 && q5 == q8)
+                {
+                    document.getElementById("t2").style.backgroundColor ="red";
+                       document.getElementById("t8").style.backgroundColor="red";
+                       document.getElementById("t5").style.backgroundColor="red";
+                       document.getElementById("demo").innerHTML = "Winner " +document.value;
+                       setTimeout(displaywinner, 300);  
+                } 
+            }
+            if(q3!="")
+            {
+                if(q3 == q6 && q6 == q9)
+                {
+                    document.getElementById("t3").style.backgroundColor ="red";
+                       document.getElementById("t6").style.backgroundColor="red";
+                       document.getElementById("t9").style.backgroundColor="red";
+                       document.getElementById("demo").innerHTML = "Winner " +document.value;
+                       setTimeout(displaywinner, 300);  
+                } 
+            }
+            
+
+
+
+          }
+            function displaywinner()
+            {
+               document.getElementById("box").style.opacity = 0;
+            }
+           
+            </script>
+
+        <h1>Welcome To Tic-Tac-Toc Game</h1>
+        <div id="box">
+     <table>
+         <tr>
+                <td class="cross" onclick="move(this);" id="t1"></td>
+                <td class="cross" onclick="move(this);" id="t2"></td>
+                <td class="cross" onclick="move(this);" id="t3"></td>
+         </tr>
+         <tr>
+                <td class="cross" onclick="move(this);" id="t4"></td>
+                <td class="cross" onclick="move(this);" id="t5"></td>
+                <td class="cross" onclick="move(this);" id="t6"></td>
+            </tr>
+            <tr>
+                    <td class="cross" onclick="move(this);" id="t7"></td>
+                    <td class="cross" onclick="move(this);" id="t8"></td>
+                    <td class="cross" onclick="move(this);" id="t9"></td>
+                </tr>
+     </table>
+     </div>
+    <h2> <p id="demo"></p> </h2>
+    </body>
+</html>

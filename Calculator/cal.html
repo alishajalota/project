@@ -1,0 +1,105 @@
+<html>
+<head>
+<title> Calculator </title>
+<style>
+#text_box1{
+margin-left:200px;
+height:50px;
+width:400px;
+margin-top:50px;
+background-color:blue;
+font-size:1.6em;
+border:1px solid black;
+text-align:right;
+}
+.value{
+width:50px;
+height:50px;
+background-color:black;
+color:white;
+margin-left:200px;
+}
+.value1
+{
+width:50px;
+height:50px;
+background-color:black;
+color:white;
+margin-left:30px;
+}
+.box{
+border:1px solid black;
+margin-left:200px;
+
+}
+</style>
+</head>
+<body>
+<form name="myform">
+<div class="box">
+<input type="text" name="text_box" id="text_box1" onkeypress="return false;"><br><br>
+<input type="button" name="btn9" value=9 class="value" onclick="display_value(btn9.value)">
+<input type="button" name="btn8" value=8 class="value1" onclick="display_value(btn8.value)">
+<input type="button" name="btn7" value=7 class="value1" onclick="display_value(btn7.value)">
+<input type="button" id="add" name="add" value="+" class="value1" onclick="display_value(add.value)">
+<br><br>
+<input type="button" name="btn6" value=6 class="value" onclick="display_value(btn6.value)">
+<input type="button" name="btn5" value=5 class="value1" onclick="display_value(btn5.value)">
+<input type="button" name="btn4" value=4 class="value1" onclick="display_value(btn4.value)">
+<input type="button" id="sub" name="sub" value="-" class="value1" onclick="display_value(sub.value)">
+<input type="button" name="delete" value="D" class="value1" style="background-color:red" onclick="delete_value()">
+<br><br>
+<input type="button" name="btn3" value=3 class="value" onclick="display_value(btn3.value)">
+<input type="button" name="btn2" value=2 class="value1" onclick="display_value(btn2.value)">
+<input type="button" name="btn1" value=1 class="value1" onclick="display_value(btn1.value)">
+<input type="button" id="mul" name="Mul" value="*" class="value1" onclick="display_value(Mul.value)">
+<br><br>
+<input type="button" name="btn0" value=0 class="value" onclick="display_value(btn0.value)">
+<button type="reset" value="C" name="reset" class="value1" style="background-color:red">C</button>
+<input type="button" name="equal" value="=" class="value1" onclick="equate()">
+<input type="button" id="div" name="div" value="/" class="value1" onclick="display_value(div.value)">
+<br><br>
+</div>
+</form>
+<script>
+var p;
+function display_value(n)
+{  
+document.myform.text_box.value += n;
+if(n == '/' || n== '*' || n== "-" || n== "+")
+     {
+      document.getElementById("add").disabled = true;
+      document.getElementById("sub").disabled = true;
+      document.getElementById("mul").disabled = true;
+      document.getElementById("div").disabled = true;
+    }
+    else 
+    {
+      document.getElementById("add").disabled = false;
+      document.getElementById("sub").disabled = false;
+      document.getElementById("mul").disabled = false;
+      document.getElementById("div").disabled = false;
+    }
+}
+
+
+function delete_value()
+{
+var d=document.getElementById("text_box1").value;
+var l=d.length-1;
+var res = d.substr(0, l);
+document.getElementById("text_box1").value = res;
+}
+function equate()
+{
+var s=document.getElementById("text_box1").value;
+var e=document.getElementById("text_box1").value=eval(document.getElementById("text_box1").value);
+document.getElementById("text_box1").value=e;
+
+}
+</script>
+</body>
+</html>
+
+
+
